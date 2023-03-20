@@ -32,7 +32,7 @@ Feature: Case insensitive matching
       ]
       }
       """
-      * def schema = read('../../../../src/test/resources/payload/egSchema.json')
+      * def schema = read('payload/egSchema.json')
       * print schema
       * match test.total == 0 
       * def status = 'active'
