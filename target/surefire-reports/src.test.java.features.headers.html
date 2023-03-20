@@ -37,9 +37,9 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">3</div>
+<div class="bg-success" id="nav-pass">0</div>
             
-<div class="bg-danger" id="nav-fail">0</div>
+<div class="bg-danger" id="nav-fail">3</div>
           
 </div>
         
@@ -47,16 +47,16 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2021-12-26 09:51:08 PM</div>        
+<div id="nav-date">2022-04-29 10:41:40 AM</div>        
       
 <div class="nav-container">
-<div class="nav-item passed">
+<div class="nav-item failed">
 <a href="#[1:3]">[1:3] pass the user request with headers_Part1 </a>
 </div>
-<div class="nav-item passed">
+<div class="nav-item failed">
 <a href="#[2:17]">[2:17] pass the user request with headers_Part2 </a>
 </div>
-<div class="nav-item passed">
+<div class="nav-item failed">
 <a href="#[3:27]">[3:27] pass the user request with headers_Part3 </a>
 </div>
 </div>
@@ -73,7 +73,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">pass the user request with headers_Part1 </span>
 </div>
-<div class="scenario-time passed">ms: 582</div>
+<div class="scenario-time failed">ms: 939</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="1">
@@ -94,7 +94,7 @@
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">And header Connection = 'Keep-Alive'</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="4">
@@ -108,7 +108,7 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">And header User-Agent = 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="6">
@@ -122,23 +122,23 @@
 <div class="step-ref passed">7</div>
 <div class="step-cell passed">When url baseUrl+'/public/v1/users'</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="8">
 <div class="step-ref passed">8</div>
 <div class="step-cell passed">And path '30'</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">566</div>
+<div class="time-cell passed">927</div>
 </div>
-<div class="preformatted" data-parent="9">21:51:07.736 request:
+<div class="preformatted" data-parent="9">10:41:34.006 request:
 1 &gt; GET https://gorest.co.in/public/v1/users/30
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
@@ -148,13 +148,12 @@
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7. 1. 5192. 22378)
 
-21:51:07.957 response time in milliseconds: 217.65
-1 &lt; 200
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
+10:41:34.932 response time in milliseconds: 925.29
+1 &lt; 404
+1 &lt; Cache-Control: no-cache
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 26 Dec 2021 16:21:07 GMT
-1 &lt; ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
+1 &lt; Date: Fri, 29 Apr 2022 14:41:34 GMT
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -164,34 +163,29 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: 5ea60340-53df-4a1e-85a0-20ea64e37821
-1 &lt; X-Runtime: 0.012406
+1 &lt; X-RateLimit-Limit: 90
+1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Reset: 1
+1 &lt; X-Request-Id: 2061db76-2539-4b67-be23-827c0d574963
+1 &lt; X-Runtime: 0.014938
 1 &lt; X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}</div>
+{"meta":null,"data":{"message":"Resource not found"}}</div>
 <div class="step-row">
 <div class="step-container" id="10">
-<div class="step-ref passed">10</div>
-<div class="step-cell passed">Then status 200</div>
+<div class="step-ref failed">10</div>
+<div class="step-cell failed">Then status 200</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell failed">0</div>
 </div>
+<div class="preformatted" data-parent="10">10:41:34.933 status code was: 404, expected: 200, response time: 925, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}
+headers.feature:14 - status code was: 404, expected: 200, response time: 925, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}</div>
 <div class="step-row">
 <div class="step-container" id="11">
-<div class="step-ref passed">11</div>
-<div class="step-cell passed">* print response</div>
+<div class="step-ref skipped">11</div>
+<div class="step-cell skipped">* print response</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted" data-parent="11">21:51:07.961 [print] {
-  "data": {
-    "gender": "male",
-    "name": "Bilwa Kaul II",
-    "id": 30,
-    "email": "ii_bilwa_kaul@harvey.info",
-    "status": "inactive"
-  },
-  "meta": null
-}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2:17]">
@@ -199,7 +193,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [2:17]</span><span class="scenario-name">pass the user request with headers_Part2 </span>
 </div>
-<div class="scenario-time passed">ms: 269</div>
+<div class="scenario-time failed">ms: 1000</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
@@ -234,9 +228,9 @@
 <div class="step-ref passed">16</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">268</div>
+<div class="time-cell passed">999</div>
 </div>
-<div class="preformatted" data-parent="16">21:51:07.969 request:
+<div class="preformatted" data-parent="16">10:41:34.940 request:
 1 &gt; GET https://gorest.co.in/public/v1/users/30
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -244,13 +238,12 @@
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
 
-21:51:08.236 response time in milliseconds: 266.24
-1 &lt; 200
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
+10:41:35.937 response time in milliseconds: 996.07
+1 &lt; 404
+1 &lt; Cache-Control: no-cache
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 26 Dec 2021 16:21:08 GMT
-1 &lt; ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
+1 &lt; Date: Fri, 29 Apr 2022 14:41:35 GMT
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -260,34 +253,26 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: cc19acbd-62f1-43e4-86c6-6a6d43026826
-1 &lt; X-Runtime: 0.003328
+1 &lt; X-Request-Id: dc1e4a56-bc19-4b7e-8ac0-6a8cb7c420ad
+1 &lt; X-Runtime: 0.003345
 1 &lt; X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}</div>
+{"meta":null,"data":{"message":"Resource not found"}}</div>
 <div class="step-row">
 <div class="step-container" id="17">
-<div class="step-ref passed">17</div>
-<div class="step-cell passed">Then status 200</div>
+<div class="step-ref failed">17</div>
+<div class="step-cell failed">Then status 200</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell failed">0</div>
 </div>
+<div class="preformatted" data-parent="17">10:41:35.938 status code was: 404, expected: 200, response time: 996, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}
+headers.feature:23 - status code was: 404, expected: 200, response time: 996, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}</div>
 <div class="step-row">
 <div class="step-container" id="18">
-<div class="step-ref passed">18</div>
-<div class="step-cell passed">* print response</div>
+<div class="step-ref skipped">18</div>
+<div class="step-cell skipped">* print response</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted" data-parent="18">21:51:08.236 [print] {
-  "data": {
-    "gender": "male",
-    "name": "Bilwa Kaul II",
-    "id": 30,
-    "email": "ii_bilwa_kaul@harvey.info",
-    "status": "inactive"
-  },
-  "meta": null
-}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[3:27]">
@@ -295,21 +280,21 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [3:27]</span><span class="scenario-name">pass the user request with headers_Part3 </span>
 </div>
-<div class="scenario-time passed">ms: 91</div>
+<div class="scenario-time failed">ms: 916</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="19">
 <div class="step-ref passed">19</div>
 <div class="step-cell passed">* configure headers = {Content-Type: 'text/xml;charset=ISO-8859-1', Connection: 'Keep-Alive', User-Agent: 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'}</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="20">
 <div class="step-ref passed">20</div>
 <div class="step-cell passed">When url baseUrl+'/public/v1/users'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="21">
@@ -323,9 +308,9 @@
 <div class="step-ref passed">22</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">90</div>
+<div class="time-cell passed">914</div>
 </div>
-<div class="preformatted" data-parent="22">21:51:08.243 request:
+<div class="preformatted" data-parent="22">10:41:35.955 request:
 1 &gt; GET https://gorest.co.in/public/v1/users/30
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -333,13 +318,12 @@
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
 
-21:51:08.332 response time in milliseconds: 88.72
-1 &lt; 200
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
+10:41:36.865 response time in milliseconds: 909.17
+1 &lt; 404
+1 &lt; Cache-Control: no-cache
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 26 Dec 2021 16:21:08 GMT
-1 &lt; ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
+1 &lt; Date: Fri, 29 Apr 2022 14:41:36 GMT
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -349,34 +333,26 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: 3f937221-2abd-4ac5-b4ed-13748bd10516
-1 &lt; X-Runtime: 0.003932
+1 &lt; X-Request-Id: b16e68ea-6dbb-4239-8ce8-81095a3de8c2
+1 &lt; X-Runtime: 0.003548
 1 &lt; X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}</div>
+{"meta":null,"data":{"message":"Resource not found"}}</div>
 <div class="step-row">
 <div class="step-container" id="23">
-<div class="step-ref passed">23</div>
-<div class="step-cell passed">Then status 200</div>
+<div class="step-ref failed">23</div>
+<div class="step-cell failed">Then status 200</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell failed">0</div>
 </div>
+<div class="preformatted" data-parent="23">10:41:36.866 status code was: 404, expected: 200, response time: 909, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}
+headers.feature:32 - status code was: 404, expected: 200, response time: 909, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}</div>
 <div class="step-row">
 <div class="step-container" id="24">
-<div class="step-ref passed">24</div>
-<div class="step-cell passed">* print response</div>
+<div class="step-ref skipped">24</div>
+<div class="step-cell skipped">* print response</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted" data-parent="24">21:51:08.332 [print] {
-  "data": {
-    "gender": "male",
-    "name": "Bilwa Kaul II",
-    "id": 30,
-    "email": "ii_bilwa_kaul@harvey.info",
-    "status": "inactive"
-  },
-  "meta": null
-}</div>
 </div>
 </div>
     

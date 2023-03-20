@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2021-12-20 06:54:49 PM</div>        
+<div id="nav-date">2022-04-29 10:41:40 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -70,14 +70,14 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">json reader parser </span>
 </div>
-<div class="scenario-time passed">ms: 68</div>
+<div class="scenario-time passed">ms: 20</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="1">
 <div class="step-ref passed">1</div>
 <div class="step-cell passed">* def jsonObject =</div>
 </div>
-<div class="time-cell passed">42</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="preformatted" data-parent="1">[
 {
@@ -90,16 +90,15 @@
 	"city" : "LA",
 	"age"  : 35
 }
-]
-18:54:49.284 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+]</div>
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* print jsonObject</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="2">18:54:49.340 [print] [
+<div class="preformatted" data-parent="2">10:41:36.932 [print] [
   {
     "name": "Tom",
     "city": "Bangalore",
@@ -116,17 +115,17 @@
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">* print jsonObject[0].name</div>
 </div>
-<div class="time-cell passed">18</div>
+<div class="time-cell passed">14</div>
 </div>
-<div class="preformatted" data-parent="3">18:54:49.358 [print] Tom</div>
+<div class="preformatted" data-parent="3">10:41:36.947 [print] Tom</div>
 <div class="step-row">
 <div class="step-container" id="4">
 <div class="step-ref passed">4</div>
 <div class="step-cell passed">* print jsonObject[1].name + " " +  jsonObject[1].city + " " + jsonObject[1].age</div>
 </div>
-<div class="time-cell passed">7</div>
+<div class="time-cell passed">5</div>
 </div>
-<div class="preformatted" data-parent="4">18:54:49.366 [print] Peter LA 35</div>
+<div class="preformatted" data-parent="4">10:41:36.952 [print] Peter LA 35</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2:26]">
@@ -134,7 +133,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [2:26]</span><span class="scenario-name">complex json reader </span>
 </div>
-<div class="scenario-time passed">ms: 20</div>
+<div class="scenario-time passed">ms: 19</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="5">
@@ -155,16 +154,15 @@
     ]
   }
 }
-}
-18:54:49.370 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+}</div>
 <div class="step-row">
 <div class="step-container" id="6">
 <div class="step-ref passed">6</div>
 <div class="step-cell passed">* print jsonObject</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
-<div class="preformatted" data-parent="6">18:54:49.371 [print] {
+<div class="preformatted" data-parent="6">10:41:36.956 [print] {
   "menu": {
     "id": "file",
     "value": "File",
@@ -193,7 +191,7 @@
 </div>
 <div class="time-cell passed">3</div>
 </div>
-<div class="preformatted" data-parent="7">18:54:49.374 [print] {
+<div class="preformatted" data-parent="7">10:41:36.959 [print] {
   "id": "file",
   "value": "File",
   "popup": {
@@ -220,15 +218,15 @@
 </div>
 <div class="time-cell passed">3</div>
 </div>
-<div class="preformatted" data-parent="8">18:54:49.377 [print] file</div>
+<div class="preformatted" data-parent="8">10:41:36.962 [print] file</div>
 <div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
 <div class="step-cell passed">* print jsonObject.menu.popup</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
-<div class="preformatted" data-parent="9">18:54:49.380 [print] {
+<div class="preformatted" data-parent="9">10:41:36.964 [print] {
   "menuitem": [
     {
       "value": "New",
@@ -251,7 +249,7 @@
 </div>
 <div class="time-cell passed">3</div>
 </div>
-<div class="preformatted" data-parent="10">18:54:49.384 [print] [
+<div class="preformatted" data-parent="10">10:41:36.967 [print] [
   {
     "value": "New",
     "onclick": "CreateNewDoc()"
@@ -270,9 +268,9 @@
 <div class="step-ref passed">11</div>
 <div class="step-cell passed">* print jsonObject.menu.popup.menuitem[0].value</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">3</div>
 </div>
-<div class="preformatted" data-parent="11">18:54:49.388 [print] New</div>
+<div class="preformatted" data-parent="11">10:41:36.970 [print] New</div>
 <div class="step-row">
 <div class="step-container" id="12">
 <div class="step-ref passed">12</div>
@@ -280,7 +278,7 @@
 </div>
 <div class="time-cell passed">4</div>
 </div>
-<div class="preformatted" data-parent="12">18:54:49.392 [print] CreateNewDoc()</div>
+<div class="preformatted" data-parent="12">10:41:36.975 [print] CreateNewDoc()</div>
 </div>
 </div>
     

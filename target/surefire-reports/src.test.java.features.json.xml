@@ -1,11 +1,11 @@
-<testsuite failures="0" name="src/test/java/features/json.feature" skipped="0" tests="2" time="0.08861">
-  <testcase classname="src.test.java.features.json" name="json reader parser" time="0.068248">
+<testsuite failures="0" name="src/test/java/features/json.feature" skipped="0" tests="2" time="0.038313">
+  <testcase classname="src.test.java.features.json" name="json reader parser" time="0.019552">
     <system-out>* def jsonObject = ........................................................ passed
 * print jsonObject ........................................................ passed
 * print jsonObject[0].name ................................................ passed
 * print jsonObject[1].name + " " +  jsonObject[1].city + " " + jsonObject[1].age . passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.features.json" name="complex json reader" time="0.020363">
+  <testcase classname="src.test.java.features.json" name="complex json reader" time="0.018761">
     <system-out>* def jsonObject = ........................................................ passed
 * print jsonObject ........................................................ passed
 * print jsonObject[0].name ................................................ passed

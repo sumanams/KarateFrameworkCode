@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"postjsonfile[1:25]","start":565,"end":2432,"title":"postjsonfile[1:25] 04:00:00.565-04:00:02.432 Create a user with the given data"}]);
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"t1[1:4]","start":623,"end":771,"title":"t1[1:4] 19:00:00.623-19:00:00.771 Read variable from different feature file"},{"id":2,"group":1,"content":"t1[2:9]","start":776,"end":785,"title":"t1[2:9] 19:00:00.776-19:00:00.785 Read var from different scenario"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });
