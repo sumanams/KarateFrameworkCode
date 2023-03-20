@@ -1,15 +1,20 @@
-<testsuite failures="0" name="src/test/java/features/postapi.feature" skipped="0" tests="1" time="0.754665">
-  <testcase classname="src.test.java.features.postapi" name="Create a user with the given data" time="0.754665">
-    <system-out>* url 'https://gorest.co.in' .............................................. passed
+<testsuite failures="1" name="src/test/java/features/postapi.feature" skipped="0" tests="1" time="1.004916">
+  <testcase classname="src.test.java.features.postapi" name="Create a user with the given data" time="1.004916">
+    <failure message="postapi.feature:20 - status code was: 422, expected: 201, response time: 994, url: https://gorest.co.in/public/v1/users, response: {&quot;data&quot;:[{&quot;field&quot;:&quot;email&quot;,&quot;message&quot;:&quot;has already been taken&quot;}],&quot;meta&quot;:null}">* url 'https://gorest.co.in' .............................................. passed
 * def requestPayload = .................................................... passed
 Given path '/public/v1/users' ............................................. passed
 And request requestPayload ................................................ passed
 And header Authorization = 'Bearer ' + tokenID ............................ passed
 When method post .......................................................... passed
-Then status 201 ........................................................... passed
-And match $.data.id == '#present' ......................................... passed
-And match $.data.name == '#present' ....................................... passed
-And match $.data.name == 'tom' ............................................ passed
-And match $.data.email == 'tom24@gmail.com' ............................... passed</system-out>
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postapi.feature:20 - status code was: 422, expected: 201, response time: 994, url: https://gorest.co.in/public/v1/users, response: {"data":[{"field":"email","message":"has already been taken"}],"meta":null}&#13;
+	at ✽.Then status 201 (postapi.feature:20)&#13;
+
+And match $.data.id == '#present' ......................................... skipped
+And match $.data.name == '#present' ....................................... skipped
+And match $.data.name == 'tom' ............................................ skipped
+And match $.data.email == 'tom24@gmail.com' ............................... skipped</failure>
   </testcase>
 </testsuite>

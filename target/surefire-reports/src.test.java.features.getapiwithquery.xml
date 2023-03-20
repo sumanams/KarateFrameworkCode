@@ -1,5 +1,5 @@
-<testsuite failures="0" name="src/test/java/features/getapiwithquery.feature" skipped="0" tests="2" time="0.948198">
-  <testcase classname="src.test.java.features.getapiwithquery" name="get all active users" time="0.833033">
+<testsuite failures="0" name="src/test/java/features/getapiwithquery.feature" skipped="0" tests="2" time="1.923047">
+  <testcase classname="src.test.java.features.getapiwithquery" name="get all active users" time="0.955508">
     <system-out>* def query = {status:'active', gender: 'female', id:23} .................. passed
 Given url baseUrl+'/public/v1/users' ...................................... passed
 And params query .......................................................... passed
@@ -7,7 +7,7 @@ When method GET ........................................................... pass
 Then status 200 ........................................................... passed
 * print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.features.getapiwithquery" name="get all active users and get the count" time="0.115165">
+  <testcase classname="src.test.java.features.getapiwithquery" name="get all active users and get the count" time="0.967539">
     <system-out>* def query = {status:'active', gender: 'female', id:23} .................. passed
 Given url baseUrl+'/public/v1/users' ...................................... passed
 And params query .......................................................... passed

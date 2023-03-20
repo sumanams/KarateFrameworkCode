@@ -1,25 +1,48 @@
-<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="2" time="1.07682">
-  <testcase classname="src.test.java.features.getapi" name="get user details - query" time="0.909444">
-    <system-out>* def query = {name:'ABC', id: 1688, email:'XYZ@gmail.com'} ............... passed
-Given url baseUrl+'/public/v1/users' ...................................... passed
-And params query .......................................................... passed
+<testsuite failures="1" name="src/test/java/features/getapi.feature" skipped="0" tests="2" time="1.983317">
+  <testcase classname="src.test.java.features.getapi" name="get user details" time="0.980396">
+    <failure message="getapi.feature:7 - status code was: 404, expected: 200, response time: 976, url: https://gorest.co.in/public/v1/users/30, response: {&quot;data&quot;:{&quot;message&quot;:&quot;Resource not found&quot;},&quot;meta&quot;:null}">Given url baseUrl+'/public/v1/users' ...................................... passed
+And path '30' ............................................................. passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... passed</system-out>
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getapi.feature:7 - status code was: 404, expected: 200, response time: 976, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}&#13;
+	at ✽.Then status 200 (getapi.feature:7)&#13;
+
+* print response .......................................................... skipped
+* def jsonResponse = response ............................................. skipped
+* print jsonResponse ...................................................... skipped
+* def actName = jsonResponse.data.name .................................... skipped
+* def actId = jsonResponse.data.id ........................................ skipped
+* def actEmail = jsonResponse.data.email .................................. skipped
+* print actName ........................................................... skipped
+* match actName == 'Ainath' ............................................... skipped
+* match actId == 30 ....................................................... skipped
+* match actEmail == 'ainath@gmail.com' .................................... skipped</failure>
   </testcase>
-  <testcase classname="src.test.java.features.getapi" name="get user details - query1" time="0.167377">
-    <system-out>* def query = {name:'ABC', id: 1688, email:'XYZ@gmail.com'} ............... passed
-Given url baseUrl+'/public/v1/users' ...................................... passed
-And params query .......................................................... passed
+  <testcase classname="src.test.java.features.getapi" name="get user details - user not found" time="1.002921">
+    <system-out>Given url baseUrl+'/public/v1/users' ...................................... passed
+And path '30' ............................................................. passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... passed
-* def query = {status:'active'} ........................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getapi.feature:7 - status code was: 404, expected: 200, response time: 976, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}&#13;
+	at ✽.Then status 200 (getapi.feature:7)&#13;
+
+* print response .......................................................... skipped
+* def jsonResponse = response ............................................. skipped
+* print jsonResponse ...................................................... skipped
+* def actName = jsonResponse.data.name .................................... skipped
+* def actId = jsonResponse.data.id ........................................ skipped
+* def actEmail = jsonResponse.data.email .................................. skipped
+* print actName ........................................................... skipped
+* match actName == 'Ainath' ............................................... skipped
+* match actId == 30 ....................................................... skipped
+* match actEmail == 'ainath@gmail.com' .................................... skipped
 Given url baseUrl+'/public/v1/users' ...................................... passed
-And params query .......................................................... passed
+And path '1' .............................................................. passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... passed
-* def jsonResponse = response ............................................. passed
-* print jsonResponse ...................................................... passed
-* def userCount = jsonResponse.data.length ................................ passed
-* print userCount ......................................................... passed</system-out>
+Then status 404 ........................................................... passed</system-out>
   </testcase>
 </testsuite>

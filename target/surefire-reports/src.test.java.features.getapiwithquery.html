@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2021-12-21 09:54:44 PM</div>        
+<div id="nav-date">2022-04-29 10:41:40 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -70,21 +70,21 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">get all active users </span>
 </div>
-<div class="scenario-time passed">ms: 833</div>
+<div class="scenario-time passed">ms: 956</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="1">
 <div class="step-ref passed">1</div>
 <div class="step-cell passed">* def query = {status:'active', gender: 'female', id:23}</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">Given url baseUrl+'/public/v1/users'</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
@@ -98,22 +98,22 @@
 <div class="step-ref passed">4</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">827</div>
+<div class="time-cell passed">954</div>
 </div>
-<div class="preformatted" data-parent="4">21:54:44.083 request:
+<div class="preformatted" data-parent="4">10:41:32.013 request:
 1 &gt; GET https://gorest.co.in/public/v1/users?status=active&amp;gender=female&amp;id=23
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: gorest.co.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
 
-21:54:44.568 response time in milliseconds: 480.90
+10:41:32.964 response time in milliseconds: 949.61
 1 &lt; 200
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 21 Dec 2021 16:24:44 GMT
-1 &lt; ETag: W/"5562abb049aa112a1d9fa48dbcbeda35"
+1 &lt; Date: Fri, 29 Apr 2022 14:41:32 GMT
+1 &lt; ETag: W/"996e3e39561b73e0aaf72fec3fa2ca2d"
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -123,10 +123,10 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: 2fb55651-de58-4a1e-a1e9-e091c36c3228
-1 &lt; X-Runtime: 0.005469
+1 &lt; X-Request-Id: 38b213c1-667d-440a-9f5b-fd9b59a354a3
+1 &lt; X-Runtime: 0.005757
 1 &lt; X-XSS-Protection: 0
-{"meta":{"pagination":{"total":1,"pages":1,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":null}}},"data":[{"id":23,"name":"Chidaakaash Johar DDS","email":"chidaakaash_dds_johar@kihn.biz","gender":"female","status":"active"}]}</div>
+{"meta":{"pagination":{"total":0,"pages":0,"page":1,"limit":20,"links":{"previous":null,"current":null,"next":null}}},"data":[]}</div>
 <div class="step-row">
 <div class="step-container" id="5">
 <div class="step-ref passed">5</div>
@@ -139,26 +139,19 @@
 <div class="step-ref passed">6</div>
 <div class="step-cell passed">* print response</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
-<div class="preformatted" data-parent="6">21:54:44.570 [print] {
+<div class="preformatted" data-parent="6">10:41:32.966 [print] {
   "data": [
-    {
-      "gender": "female",
-      "name": "Chidaakaash Johar DDS",
-      "id": 23,
-      "email": "chidaakaash_dds_johar@kihn.biz",
-      "status": "active"
-    }
   ],
   "meta": {
     "pagination": {
-      "total": 1,
-      "pages": 1,
+      "total": 0,
+      "pages": 0,
       "limit": 20,
       "links": {
         "next": null,
-        "current": "https://gorest.co.in/public/v1/users?page=1",
+        "current": null,
         "previous": null
       },
       "page": 1
@@ -172,7 +165,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [2:12]</span><span class="scenario-name">get all active users and get the count </span>
 </div>
-<div class="scenario-time passed">ms: 115</div>
+<div class="scenario-time passed">ms: 968</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="7">
@@ -186,36 +179,36 @@
 <div class="step-ref passed">8</div>
 <div class="step-cell passed">Given url baseUrl+'/public/v1/users'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
 <div class="step-cell passed">And params query</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="10">
 <div class="step-ref passed">10</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">101</div>
+<div class="time-cell passed">931</div>
 </div>
-<div class="preformatted" data-parent="10">21:54:44.577 request:
+<div class="preformatted" data-parent="10">10:41:32.997 request:
 1 &gt; GET https://gorest.co.in/public/v1/users?status=active
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: gorest.co.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
 
-21:54:44.676 response time in milliseconds: 98.01
+10:41:33.922 response time in milliseconds: 922.08
 1 &lt; 200
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 21 Dec 2021 16:24:44 GMT
-1 &lt; ETag: W/"b0292a638de384bb25c3d30331516977"
+1 &lt; Date: Fri, 29 Apr 2022 14:41:33 GMT
+1 &lt; ETag: W/"67bcee5f960ce12ab271d1e9fc916e54"
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -225,10 +218,10 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: dac52a2d-f296-4fa4-b621-0c983fa5940c
-1 &lt; X-Runtime: 0.007270
+1 &lt; X-Request-Id: 99ae2282-1e94-43c2-aa8f-ad344cd921d4
+1 &lt; X-Runtime: 0.008368
 1 &lt; X-XSS-Protection: 0
-{"meta":{"pagination":{"total":1194,"pages":60,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":1688,"name":"ABC","email":"XYZ@gmail.com","gender":"male","status":"active"},{"id":2078,"name":"Vladimir Kuzmitsky","email":"v.kuzmitsky@gmail.com","gender":"male","status":"active"},{"id":2079,"name":"Brandon Williamson","email":"Nettie97@yahoo.com","gender":"male","status":"active"},{"id":1691,"name":"Sharvari","email":"test@example.com","gender":"male","status":"active"},{"id":2080,"name":"Michael Poo","email":"1npxS1xOo5@mail.ru","gender":"male","status":"active"},{"id":2081,"name":"Hakobioos","email":"Hakobioos@gmaill.com","gender":"male","status":"active"},{"id":2082,"name":"Hakobiolos","email":"Hakobiooos@gmaill.com","gender":"male","status":"active"},{"id":12,"name":"Msgr. Tara Trivedi","email":"tara_trivedi_msgr@auer.co","gender":"male","status":"active"},{"id":13,"name":"Chaturaanan Kakkar","email":"kakkar_chaturaanan@yost.com","gender":"male","status":"active"},{"id":15,"name":"Chandani Embranthiri","email":"chandani_embranthiri@thompson-feeney.com","gender":"male","status":"active"},{"id":68,"name":"Balaji Petkar","email":"Lifeofrules@gmail.com","gender":"male","status":"active"},{"id":20,"name":"Chidambaram Tagore","email":"tagore_chidambaram@rogahn.info","gender":"female","status":"active"},{"id":21,"name":"Chandrakala Rana","email":"rana_chandrakala@hayes.io","gender":"female","status":"active"},{"id":23,"name":"Chidaakaash Johar DDS","email":"chidaakaash_dds_johar@kihn.biz","gender":"female","status":"active"},{"id":24,"name":"Kumar Pillai","email":"pillai_kumar@monahan.io","gender":"female","status":"active"},{"id":26,"name":"Sheela Butt","email":"sheela_butt@hand.com","gender":"female","status":"active"},{"id":27,"name":"Rakesh Acharya","email":"rakesh_acharya@kautzer.org","gender":"female","status":"active"},{"id":30,"name":"Mina Khatri","email":"khatri_mina@johns.info","gender":"female","status":"active"},{"id":33,"name":"Sloka Pillai","email":"sloka_pillai@green-boehm.com","gender":"male","status":"active"},{"id":34,"name":"Menka Shukla","email":"shukla_menka@jenkins.co","gender":"male","status":"active"}]}</div>
+{"meta":{"pagination":{"total":1077,"pages":54,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":2232,"name":"Sunita Dhawan","email":"sunita_dhawan@cruickshank.info","gender":"female","status":"active"},{"id":2231,"name":"Bhupen Ahuja","email":"ahuja_bhupen@renner-parisian.biz","gender":"male","status":"active"},{"id":2229,"name":"Jagdeep Iyengar","email":"iyengar_jagdeep@feil.io","gender":"male","status":"active"},{"id":2228,"name":"Rajendra Bhattathiri","email":"rajendra_bhattathiri@leannon.info","gender":"female","status":"active"},{"id":2226,"name":"Ojaswini Bhat","email":"bhat_ojaswini@davis-runolfsson.name","gender":"female","status":"active"},{"id":2224,"name":"Manik Varma","email":"varma_manik@wyman-jerde.io","gender":"female","status":"active"},{"id":2221,"name":"Rohan Gandhi","email":"rohan_gandhi@kiehn-bartell.org","gender":"female","status":"active"},{"id":2220,"name":"Chitramala Bhat","email":"chitramala_bhat@ohara-heller.org","gender":"male","status":"active"},{"id":2218,"name":"Aaditya Nayar","email":"nayar_aaditya@bernier-zboncak.com","gender":"female","status":"active"},{"id":2213,"name":"Aalok Malik","email":"aalok_malik@cruickshank-jenkins.name","gender":"male","status":"active"},{"id":2210,"name":"Malti Bhat","email":"malti_bhat@hilll-hermann.info","gender":"male","status":"active"},{"id":2209,"name":"Vasudeva Agarwal","email":"agarwal_vasudeva@hermann.name","gender":"female","status":"active"},{"id":2208,"name":"Gorakhanatha Nambeesan","email":"nambeesan_gorakhanatha@ratke-friesen.com","gender":"female","status":"active"},{"id":2207,"name":"Devdan Khanna","email":"devdan_khanna@adams-hayes.co","gender":"male","status":"active"},{"id":2205,"name":"Sen. Ojaswini Mukhopadhyay","email":"mukhopadhyay_ojaswini_sen@breitenberg.org","gender":"female","status":"active"},{"id":2204,"name":"Manikya Gupta CPA","email":"gupta_cpa_manikya@schmitt-fisher.com","gender":"male","status":"active"},{"id":2202,"name":"Kali Chopra","email":"chopra_kali@windler.co","gender":"male","status":"active"},{"id":2200,"name":"Ajeet Talwar","email":"ajeet_talwar@zulauf.co","gender":"female","status":"active"},{"id":2199,"name":"Garuda Abbott","email":"garuda_abbott@lemke.co","gender":"male","status":"active"},{"id":2197,"name":"Saraswati Mishra","email":"mishra_saraswati@kunze.org","gender":"male","status":"active"}]}</div>
 <div class="step-row">
 <div class="step-container" id="11">
 <div class="step-ref passed">11</div>
@@ -248,155 +241,155 @@
 <div class="step-ref passed">13</div>
 <div class="step-cell passed">* print jsonResponse</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">3</div>
 </div>
-<div class="preformatted" data-parent="13">21:54:44.678 [print] {
+<div class="preformatted" data-parent="13">10:41:33.929 [print] {
   "data": [
     {
-      "gender": "male",
-      "name": "ABC",
-      "id": 1688,
-      "email": "XYZ@gmail.com",
+      "gender": "female",
+      "name": "Sunita Dhawan",
+      "id": 2232,
+      "email": "sunita_dhawan@cruickshank.info",
       "status": "active"
     },
     {
       "gender": "male",
-      "name": "Vladimir Kuzmitsky",
-      "id": 2078,
-      "email": "v.kuzmitsky@gmail.com",
+      "name": "Bhupen Ahuja",
+      "id": 2231,
+      "email": "ahuja_bhupen@renner-parisian.biz",
       "status": "active"
     },
     {
       "gender": "male",
-      "name": "Brandon Williamson",
-      "id": 2079,
-      "email": "Nettie97@yahoo.com",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Sharvari",
-      "id": 1691,
-      "email": "test@example.com",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Michael Poo",
-      "id": 2080,
-      "email": "1npxS1xOo5@mail.ru",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Hakobioos",
-      "id": 2081,
-      "email": "Hakobioos@gmaill.com",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Hakobiolos",
-      "id": 2082,
-      "email": "Hakobiooos@gmaill.com",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Msgr. Tara Trivedi",
-      "id": 12,
-      "email": "tara_trivedi_msgr@auer.co",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Chaturaanan Kakkar",
-      "id": 13,
-      "email": "kakkar_chaturaanan@yost.com",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Chandani Embranthiri",
-      "id": 15,
-      "email": "chandani_embranthiri@thompson-feeney.com",
-      "status": "active"
-    },
-    {
-      "gender": "male",
-      "name": "Balaji Petkar",
-      "id": 68,
-      "email": "Lifeofrules@gmail.com",
+      "name": "Jagdeep Iyengar",
+      "id": 2229,
+      "email": "iyengar_jagdeep@feil.io",
       "status": "active"
     },
     {
       "gender": "female",
-      "name": "Chidambaram Tagore",
-      "id": 20,
-      "email": "tagore_chidambaram@rogahn.info",
+      "name": "Rajendra Bhattathiri",
+      "id": 2228,
+      "email": "rajendra_bhattathiri@leannon.info",
       "status": "active"
     },
     {
       "gender": "female",
-      "name": "Chandrakala Rana",
-      "id": 21,
-      "email": "rana_chandrakala@hayes.io",
+      "name": "Ojaswini Bhat",
+      "id": 2226,
+      "email": "bhat_ojaswini@davis-runolfsson.name",
       "status": "active"
     },
     {
       "gender": "female",
-      "name": "Chidaakaash Johar DDS",
-      "id": 23,
-      "email": "chidaakaash_dds_johar@kihn.biz",
+      "name": "Manik Varma",
+      "id": 2224,
+      "email": "varma_manik@wyman-jerde.io",
       "status": "active"
     },
     {
       "gender": "female",
-      "name": "Kumar Pillai",
-      "id": 24,
-      "email": "pillai_kumar@monahan.io",
-      "status": "active"
-    },
-    {
-      "gender": "female",
-      "name": "Sheela Butt",
-      "id": 26,
-      "email": "sheela_butt@hand.com",
-      "status": "active"
-    },
-    {
-      "gender": "female",
-      "name": "Rakesh Acharya",
-      "id": 27,
-      "email": "rakesh_acharya@kautzer.org",
-      "status": "active"
-    },
-    {
-      "gender": "female",
-      "name": "Mina Khatri",
-      "id": 30,
-      "email": "khatri_mina@johns.info",
+      "name": "Rohan Gandhi",
+      "id": 2221,
+      "email": "rohan_gandhi@kiehn-bartell.org",
       "status": "active"
     },
     {
       "gender": "male",
-      "name": "Sloka Pillai",
-      "id": 33,
-      "email": "sloka_pillai@green-boehm.com",
+      "name": "Chitramala Bhat",
+      "id": 2220,
+      "email": "chitramala_bhat@ohara-heller.org",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Aaditya Nayar",
+      "id": 2218,
+      "email": "nayar_aaditya@bernier-zboncak.com",
       "status": "active"
     },
     {
       "gender": "male",
-      "name": "Menka Shukla",
-      "id": 34,
-      "email": "shukla_menka@jenkins.co",
+      "name": "Aalok Malik",
+      "id": 2213,
+      "email": "aalok_malik@cruickshank-jenkins.name",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Malti Bhat",
+      "id": 2210,
+      "email": "malti_bhat@hilll-hermann.info",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Vasudeva Agarwal",
+      "id": 2209,
+      "email": "agarwal_vasudeva@hermann.name",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Gorakhanatha Nambeesan",
+      "id": 2208,
+      "email": "nambeesan_gorakhanatha@ratke-friesen.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Devdan Khanna",
+      "id": 2207,
+      "email": "devdan_khanna@adams-hayes.co",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Sen. Ojaswini Mukhopadhyay",
+      "id": 2205,
+      "email": "mukhopadhyay_ojaswini_sen@breitenberg.org",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Manikya Gupta CPA",
+      "id": 2204,
+      "email": "gupta_cpa_manikya@schmitt-fisher.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Kali Chopra",
+      "id": 2202,
+      "email": "chopra_kali@windler.co",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Ajeet Talwar",
+      "id": 2200,
+      "email": "ajeet_talwar@zulauf.co",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Garuda Abbott",
+      "id": 2199,
+      "email": "garuda_abbott@lemke.co",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Saraswati Mishra",
+      "id": 2197,
+      "email": "mishra_saraswati@kunze.org",
       "status": "active"
     }
   ],
   "meta": {
     "pagination": {
-      "total": 1194,
-      "pages": 60,
+      "total": 1077,
+      "pages": 54,
       "limit": 20,
       "links": {
         "next": "https://gorest.co.in/public/v1/users?page=2",
@@ -412,7 +405,7 @@
 <div class="step-ref passed">14</div>
 <div class="step-cell passed">* def userCount = jsonResponse.data.length</div>
 </div>
-<div class="time-cell passed">10</div>
+<div class="time-cell passed">22</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="15">
@@ -421,13 +414,13 @@
 </div>
 <div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="15">21:54:44.688 [print] 20</div>
+<div class="preformatted" data-parent="15">10:41:33.952 [print] 20</div>
 <div class="step-row">
 <div class="step-container" id="16">
 <div class="step-ref passed">16</div>
 <div class="step-cell passed">* match userCount == 20</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">7</div>
 </div>
 </div>
 </div>

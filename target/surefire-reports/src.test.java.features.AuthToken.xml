@@ -1,10 +1,14 @@
-<testsuite failures="0" name="src/test/java/features/AuthToken.feature" skipped="0" tests="1" time="0.873811">
-  <testcase classname="src.test.java.features.AuthToken" name="get user details" time="0.873811">
-    <system-out>* print tokenID ........................................................... passed
+<testsuite failures="1" name="src/test/java/features/AuthToken.feature" skipped="0" tests="1" time="1.895131">
+  <testcase classname="src.test.java.features.AuthToken" name="get user details" time="1.895131">
+    <failure message="AuthToken.feature:9 - status code was: 404, expected: 200, response time: 1280, url: https://gorest.co.in/public/v1/users/30, response: {&quot;data&quot;:{&quot;message&quot;:&quot;Resource not found&quot;},&quot;meta&quot;:null}">* print tokenID ........................................................... passed
 Given header Authorization = 'Bearer '+ tokenID ........................... passed
 Given url baseUrl+'/public/v1/users' ...................................... passed
 And path '30' ............................................................. passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... passed</system-out>
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: AuthToken.feature:9 - status code was: 404, expected: 200, response time: 1280, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}&#13;
+	at ✽.Then status 200 (AuthToken.feature:9)</failure>
   </testcase>
 </testsuite>

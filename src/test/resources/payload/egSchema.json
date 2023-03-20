@@ -1,0 +1,28 @@
+{
+	"sourceType": "Error",
+	"id": "#present",
+	"type": "searchuser",
+	"total": 0,
+	"value": [
+		{
+			"details": "#present",
+			"source": {
+				"sourceType": "Error",
+				"id": "#ignore",
+				"issue": [
+					{
+						"severity": "#regex(high|low)",
+						"code": "#regex[0-9]{3}",
+						"message": {
+							"text": "No matching User details found"
+						},
+						"errorCode": "ERROR401"
+					}
+				]
+			},
+			"user": {
+				"status": "active"
+			}
+		}
+	]
+}

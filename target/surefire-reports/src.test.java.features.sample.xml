@@ -1,9 +1,9 @@
-<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="3" time="0.01829">
-  <testcase classname="src.test.java.features.sample" name="Hello World scenario" time="0.00384">
+<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="3" time="0.011625">
+  <testcase classname="src.test.java.features.sample" name="Hello World scenario" time="0.003244">
     <system-out>* print 'hello world' ..................................................... passed
 * print 'hello Naveen automation Labs' .................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.features.sample" name="declare and print varibales" time="0.010301">
+  <testcase classname="src.test.java.features.sample" name="declare and print varibales" time="0.004892">
     <system-out>* print 'hello world' ..................................................... passed
 * print 'hello Naveen automation Labs' .................................... passed
 * def balance = 200 ....................................................... passed
@@ -11,7 +11,7 @@
 * def tax = 10 ............................................................ passed
 * print 'total amount -&gt;' + (balance + fee + tax) ......................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.features.sample" name="calculator scenario" time="0.00415">
+  <testcase classname="src.test.java.features.sample" name="calculator scenario" time="0.003489">
     <system-out>* print 'hello world' ..................................................... passed
 * print 'hello Naveen automation Labs' .................................... passed
 * def balance = 200 ....................................................... passed
